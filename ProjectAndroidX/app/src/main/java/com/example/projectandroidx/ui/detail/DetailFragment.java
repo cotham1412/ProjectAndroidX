@@ -42,6 +42,9 @@ public class Home1Fragment extends Fragment {
                     .getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.nav_home1, new HomeFragment());
             fragmentTransaction.commit();
+
+//            Intent intent = new Intent(this, MainActivity.this);
+//            startActivity(intent);
             }
         });
         return root;

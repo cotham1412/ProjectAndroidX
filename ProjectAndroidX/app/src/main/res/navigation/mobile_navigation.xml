@@ -12,10 +12,11 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_home1"
-        android:name="com.example.projectandroidx.ui.home1.Home1Fragment"
+        android:id="@+id/nav_detail"
+        android:name="com.example.projectandroidx.ui.detail.DetailFragment"
         android:label="home1"
-        tools:layout="@layout/fragment_home1" />
+        tools:layout="@layout/fragment_detail" />
+
 
     <fragment
         android:id="@+id/nav_gallery"

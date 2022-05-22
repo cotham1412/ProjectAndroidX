@@ -1,0 +1,36 @@
+[{
+    "user_ID": 1,
+    "user_Name": "khiem",
+    "user_Phone": "0332074150",
+    "user_Password": 123456
+},
+
+{
+    "user_ID": 2,
+    "user_Name": "tham",
+    "user_Phone": "0332074150",
+    "user_Password": 123456
+},
+
+
+{
+    "user_ID": 3,
+    "user_Name": "duong",
+    "user_Phone": "0332074150",
+    "user_Password": 123456
+},
+
+{
+    "user_ID": 4,
+    "user_Name": "thaianh",
+    "user_Phone": "0332074150",
+    "user_Password": 123456
+},
+
+{
+    "user_ID": 5,
+    "user_Name": "dung",
+    "user_Phone": "0332074150",
+    "user_Password": 123456
+}
+]

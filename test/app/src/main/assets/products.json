@@ -1,0 +1,78 @@
+[
+  {
+    "category_ID": 1,
+    "category_Name": "AUG",
+    "product_list": [
+      {
+        "product_ID": 1,
+        "product_Name": "maytinh1",
+        "product_Price": "20000.0",
+        "product_Des": "máy tính 1",
+        "product_Image": 
+        [
+            "img.png", 
+            "img.png", 
+            "img.png", 
+            "img.png"
+        ]
+      }
+    ]
+  },
+  {
+    "category_ID": 2,
+    "category_Name": "FNG",
+    "product_list": [
+      {
+        "product_ID": 2,
+        "product_Name": "maytinh2",
+        "product_Price": "20000.0",
+        "product_Des": "máy tính 2",
+        "product_Image": 
+        [
+            "img.png", 
+            "img.png", 
+            "img.png", 
+            "img.png"
+        ]
+      }
+    ]
+  },
+  {
+    "category_ID": 3,
+    "category_Name": "XNXX",
+    "product_list": [
+      {
+        "product_ID": 3,
+        "product_Name": "maytinh3",
+        "product_Price": "20000.0",
+        "product_Des": "máy tính 3",
+        "product_Image": 
+        [
+            "img.png", 
+            "img.png", 
+            "img.png", 
+            "img.png"
+        ]
+      }
+    ]
+  },
+  {
+    "category_ID": 4,
+    "category_Name": "UDF",
+    "product_list": [
+      {
+        "product_ID": 4,
+        "product_Name": "maytinh4",
+        "product_Price": "20000.0",
+        "product_Des": "máy tính 4",
+        "product_Image": 
+        [
+            "img.png", 
+            "img.png", 
+            "img.png", 
+            "img.png"
+        ]
+      }
+    ]
+  }
+]

@@ -4,23 +4,34 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.124" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/drawable/a.xml" value="0.1" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/drawable/ic_cart_shopping.xml" value="0.1515" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/drawable/ic_detail.xml" value="0.1505" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/drawable/ic_house.xml" value="0.1505" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/drawable/ic_id_card.xml" value="0.2055" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/drawable/ic_launcher_background.xml" value="0.124" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/drawable/ic_login.xml" value="0.2055" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/drawable/ic_menu_camera.xml" value="0.124" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.124" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.124" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/drawable/ic_mobile_screen.xml" value="0.2055" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/drawable/side_nav_bar.xml" value="0.124" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/layout/app_bar_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/layout/content_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/layout/fragment_detail.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/layout/fragment_cart.xml" value="0.2" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/layout/fragment_detail.xml" value="0.264" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/layout/fragment_gallery.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/layout/fragment_home1.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/layout/fragment_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/layout/fragment_product.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/layout/fragment_register.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/layout/fragment_slideshow.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/layout/home_card_view.xml" value="0.176" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/layout/nav_header_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/layout/product_card_view.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/layout/scrollview.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/menu/activity_main_drawer.xml" value="0.4" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/menu/main.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ProjectAndroidX/ProjectAndroidX/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1515" />

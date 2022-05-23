@@ -1,4 +1,4 @@
-package com.example.projectandroidx.ui.slideshow;
+package com.example.projectandroidx.ui.login;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,23 +9,40 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.projectandroidx.databinding.FragmentSlideshowBinding;
+import com.example.projectandroidx.R;
+import com.example.projectandroidx.databinding.FragmentLoginBinding;
+import com.example.projectandroidx.ui.detail.DetailFragment;
 
-public class SlideshowFragment extends Fragment {
+public class LoginFragment extends Fragment {
 
-    private FragmentSlideshowBinding binding;
+    private FragmentLoginBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        SlideshowViewModel slideshowViewModel =
-                new ViewModelProvider(this).get(SlideshowViewModel.class);
+        LoginViewModel galleryViewModel =
+                new ViewModelProvider(this).get(LoginViewModel.class);
 
-        binding = FragmentSlideshowBinding.inflate(inflater, container, false);
+        binding = FragmentLoginBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textSlideshow;
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        binding.loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(LoginFragment.this)
+                        .navigate(R.id.action_nav_login_to_nav_home);
+            }
+        });
+
+        binding.registerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(LoginFragment.this)
+                        .navigate(R.id.action_nav_login_to_nav_register);
+            }
+        });
+
         return root;
     }
 

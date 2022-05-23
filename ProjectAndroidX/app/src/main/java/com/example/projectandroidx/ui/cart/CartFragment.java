@@ -1,4 +1,4 @@
-package com.example.projectandroidx.ui.gallery;
+package com.example.projectandroidx.ui.cart;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,26 +9,50 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.projectandroidx.databinding.FragmentGalleryBinding;
+import com.example.projectandroidx.R;
+import com.example.projectandroidx.databinding.FragmentCartBinding;
+import com.example.projectandroidx.ui.detail.DetailFragment;
 
-public class GalleryFragment extends Fragment {
 
-    private FragmentGalleryBinding binding;
+public class CartFragment extends Fragment {
+
+    private FragmentCartBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        GalleryViewModel galleryViewModel =
-                new ViewModelProvider(this).get(GalleryViewModel.class);
+        CartViewModel galleryViewModel =
+                new ViewModelProvider(this).get(CartViewModel.class);
 
-        binding = FragmentGalleryBinding.inflate(inflater, container, false);
+        binding = FragmentCartBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textGallery;
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        binding.cartHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(CartFragment.this)
+                        .navigate(R.id.action_nav_cart_to_nav_home);
+            }
+        });
+
         return root;
     }
 
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        // xu ly nut thanh toan trong cart
+//        binding.cartPayment.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                NavHostFragment.findNavController(CartFragment.this)
+//                        .navigate(R.id.);
+//            }
+//        });
+
+
+    }
     @Override
     public void onDestroyView() {
         super.onDestroyView();

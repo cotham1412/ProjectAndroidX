@@ -1,14 +1,16 @@
-package com.example.projectandroidx.ui.detail;
+package com.example.projectandroidx.ui.register;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.ViewModel;
 
-public class DetailViewModel {
+public class RegisterViewModel extends ViewModel {
+
     private final MutableLiveData<String> mText;
 
-    public DetailViewModel() {
+    public RegisterViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is detail fragment");
+        mText.setValue("This is Login fragment");
     }
 
     public LiveData<String> getText() {

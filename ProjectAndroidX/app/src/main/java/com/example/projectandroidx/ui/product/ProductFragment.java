@@ -10,17 +10,18 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.projectandroidx.databinding.FragmentHomeBinding;
+import com.example.projectandroidx.databinding.FragmentProductBinding;
 
 public class ProductFragment extends Fragment {
 
-    private FragmentHomeBinding binding;
+    private FragmentProductBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        ProductViewModel homeViewModel =
+        ProductViewModel productViewModel =
                 new ViewModelProvider(this).get(ProductViewModel.class);
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
+        binding = FragmentProductBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
 //        final TextView textView = binding.textHome;

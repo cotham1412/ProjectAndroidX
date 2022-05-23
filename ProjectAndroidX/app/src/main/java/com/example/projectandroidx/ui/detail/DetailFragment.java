@@ -10,6 +10,7 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.projectandroidx.R;
 import com.example.projectandroidx.databinding.FragmentDetailBinding;
@@ -24,21 +25,13 @@ public class DetailFragment extends Fragment {
         binding = FragmentDetailBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final Button button = binding.button4;
+        final Button button = binding.detailButton;
 
-        button.setText("Thêm Vào Giỏ Hàng");
-        button.setOnClickListener(new View.OnClickListener() {
+        binding.detailButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d("TAG", "onCreateView: ");
-
-                FragmentTransaction fragmentTransaction = getActivity()
-                    .getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.nav_home1, new HomeFragment());
-            fragmentTransaction.commit();
-
-//            Intent intent = new Intent(this, MainActivity.this);
-//            startActivity(intent);
+                NavHostFragment.findNavController(DetailFragment.this)
+                        .navigate(R.id.action_nav_detail_to_nav_cart);
             }
         });
         return root;

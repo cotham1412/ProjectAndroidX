@@ -4,7 +4,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.Menu;
+import android.widget.ArrayAdapter;
 
+import com.example.projectandroidx.ui.Adapter.MyRecycleViewAdapter;
+import com.example.projectandroidx.ui.Product;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -14,13 +17,20 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.projectandroidx.databinding.ActivityMainBinding;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
+    private ArrayList<Product> products = new ArrayList<Product> ();
+    private ArrayAdapter<Product> adapter;
 
 //     cac buoc tao 1 muc trong nav :
 //        b1: vao` muc. ui -> tao. package moi' dat ten theo chuc' nang -> tao. file Fragment va` file ViewModel
@@ -48,12 +58,39 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_detail)
+                R.id.nav_home,
+                R.id.nav_register,
+                R.id.nav_cart,
+                R.id.nav_login,
+                R.id.nav_product,
+                R.id.nav_detail
+        )
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+
+
+        //ListView list = findViewById(R.id.list);
+        RecyclerView list = findViewById(R.id.list);
+        adapter = new MyRecycleViewAdapter(this, R.layout.home_card_view, R.layout.fragment_home, products);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
+
+//        code ngay` 21/3
+        GridLayoutManager lienerLayoutManager = new GridLayoutManager(this, 2);
+
+        // LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+
+        //code chay theo chiu` ngang
+        // LinearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+
+//        code ngay` 21/3
+        //do du lieu vao`
+        list.setLayoutManager(lienerLayoutManager);
+        //cài đặt adapter
+        list.setAdapter(adapter);
     }
 
 //    @Override
